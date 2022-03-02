@@ -9,30 +9,57 @@
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href = "https://fonts.google.com/specimen/Outfit" rel = "stylesheet" type="text/css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     .background{
       background-color: hsl(220, 15%, 55%);
       width: 1440px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .qc-code-outer{
-      background-color: hsl(0, 0, 100);
+      
+      background-color: white;
       border-radius: 15px;
+      width: 400px;
+      height: 600px;
+      margin: 50px;
+      
+    }
+    .img{
+      width: 275px;
+      height: 275px;
+      border-radius: 15px;
+    }
+    .text-heading{
+      font-weight: 700;
+      font-family: 'Outline',Arial, Helvetica, sans-serif;
+      padding-top: 50px;
 
 
+    }
+    p{
+      font-size: 15px;
+      font-family: 'Outline',monospace, Helvetica, sans-serif;
+      font-weight: 400;
     }
   
 
   </style>
 </head>
-<body>
+<body class = "background">
+  <div class = "qc-code-outer">
+    <div style = "padding: 50px; text-align: center; width: 270px">
+    <img class = "img" src= "./images/image-qr-code.png" alt = "QR Code"></img>
+    <div class = "text-heading">Improve your front-end skills by building projects</div>
 
-  
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    </p>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Rio242">Mario Strahan</a>.
